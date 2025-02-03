@@ -3,21 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page</title>
+    <title>Login Page</title>
+    <link rel="icon" type="image/x-icon" href="images/game-controller.png">
+    <link rel="stylesheet" href="styles.css"> <!-- Linking External CSS -->
 </head>
 <body>
-  
-    <fieldset>
-        <legend>Information</legend>
-        <form action>
-            <label for="eid">Email:</label>
-            <input type="email" name="eid"><br><br>
-            <label for="pas">Password:</label>
-            <input type="password" name="pas"><br><br>
-            <button type="submit">Submit</button>
-        </form>
-        <p>Dont have an account? <a href="signup.html">Sign up here</a></p>
-    </fieldset>
-    
+
+    <div class="login-container">
+        <fieldset>
+            <legend>Login</legend>
+            <form action="#">
+                <label for="eid">Email:</label>
+                <input type="email" name="eid" required><br><br>
+
+                <label for="pas">Password:</label>
+                <input type="password" name="pas" required><br><br>
+
+                <button type="submit" class="login-btn">Login</button>
+                
+                <!-- Google Login Button -->
+                <div class="google-btn">
+                    <img src="images/google.jpg" alt="Google Logo">
+                    <a href="#">Login with Google</a>
+                </div>
+            </form>
+
+            <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+        </fieldset>
+    </div>
+
 </body>
 </html>

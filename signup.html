@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>signup page</title>
+    <title>Signup Page</title>
+    <link rel="icon" type="image/x-icon" href="images/game-controller.png">
+    <link rel="stylesheet" href="styles.css"> <!-- Linking External CSS -->
 </head>
 <body>
-    <fieldset>
-        <legend>Information</legend>
-        <form action="">
-            <label for="name">Name:</label>
-            <input type="text" name="name"><br><br>
-            <label for="email">Email:</label>
-            <input type="password" name="email"><br> <br>
-            <label for="pass">PAssword:</label>
-            <input type="password" name="pass"><br><br>
-            <label for="pass"> Confirm PAssword:</label>
-            <input type="password" name="pass"><br><br>
-            <button type="submit">signup</button>
-        </form>
-        <p>Already have an account?<a href="login.html">Login here</a></p>
-    </fieldset>
+    
+    <div class="signup-container">
+        <fieldset>
+            <legend>Sign Up</legend>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required><br><br>
+
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" required><br><br>
+
+                <label for="confirm_pass">Confirm Password:</label>
+                <input type="password" name="confirm_pass" required><br><br>
+
+                <button type="submit" class="signup-btn">Sign Up</button>
+            </form>
+
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </fieldset>
+    </div>
+
 </body>
 </html>

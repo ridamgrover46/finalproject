@@ -3,34 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Page</title>
-    <link rel="icon" type="image/x-icon" href="images/game-controller.png">
-    <link rel="stylesheet" href="styles.css"> <!-- Linking External CSS -->
+    <title>Login page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <div class="signup-container">
-        <fieldset>
-            <legend>Sign Up</legend>
-            <form action="#">
-                <label for="name">Name:</label>
-                <input type="text" name="name" required><br><br>
-
-                <label for="email">Email:</label>
-                <input type="email" name="email" required><br><br>
-
-                <label for="pass">Password:</label>
-                <input type="password" name="pass" required><br><br>
-
-                <label for="confirm_pass">Confirm Password:</label>
-                <input type="password" name="confirm_pass" required><br><br>
-
-                <button type="submit" class="signup-btn">Sign Up</button>
-            </form>
-
-            <p>Already have an account? <a href="login.html">Login here</a></p>
-        </fieldset>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/Gadgets world-Photoroom.png"  width="125px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="">BestSellers</a></li>
+                </ul>
+            </nav>
+            <img src="images/carticon.png" width="30px" height="30px">
+            <div class="log"><a href="login.html">Login</a></div>
+            <div class="log">
+            <a href="signup.html">Signup</a>
+        </div>
+        </div>
+       
     </div>
 
+        <!-- -----accounts---- -->
+         <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col2">
+                        <img src="images/Home-Photoroom.png" width="100%">
+
+                    </div>
+                    <div class="col2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                               <a href="login.html"> <span>Login</span></a>
+                                <a href="signup.html"><span> Register</span></a>
+                            </div>
+                            <form >
+                                <input type="text" placeholder="username">
+                                <input type="email" placeholder="email">
+                                <input type="password" placeholder="Password">
+                                <input type="password" placeholder=" Confirm Password">
+                                <button type="submit" class="btn">Login</button>
+                                <a href="">Forgot password</a>
+                                <p>Already have an account? <a href="login.html"><b>Login here</b></a></p>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+
+
+           <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Our Commitment</h3>
+                    <p>Your trusted destination for premium mobile accessories. 
+                        Quality, affordability, and reliability – all in one place!</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/Gadgets world-Photoroom.png" alt="">
+                    <p>Gadgets World – Bringing you the latest in mobile accessories with unbeatable quality and prices!</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Support</h3>
+                    <p>Need help? Our support team is here for you 24/7. Contact us anytime!</p>
+                    <ul>
+                        <li>Coupons & Offers</li>
+                        <li>Return Policy</li>
+                        <li>Blog Posts</li>
+                        <li>FAQs</li>
+                        <li>Shipping Information</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <hr> -->
+        <div class="copyright">
+            © 2025 Gadgets World. All Rights Reserved.
+        </div>
+    </div>
+   
 </body>
 </html>
